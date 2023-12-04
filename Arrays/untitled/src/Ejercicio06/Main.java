@@ -11,9 +11,8 @@ public class Main {
 
         // Recorremos el array asignando un número random a cada posición y se imprime
         for (int i = 0; i < array.length; i++) {
-            int answer = numero.nextInt(10);
-            array[i] = answer;
-            System.out.print(answer + " ");
+            array[i] = numero.nextInt(10);
+            System.out.print(array[i] + " ");
         }
 
         // Creamos la entrada para pedir el número
@@ -30,7 +29,7 @@ public class Main {
 
         // Si el contador está a 0 imprime mensaje sino muestra el resultado
         if (contador == 0){
-            System.out.println("No se ha encontrado el número");
+            System.out.println("No se ha encontrado el número" + numero);
         } else {
             System.out.println("Se ha encontrado " + contador + " veces");
         }
