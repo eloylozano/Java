@@ -12,7 +12,6 @@ public class Main {
         int numero2 = teclado.nextInt();
 
         int mcd = calcularMCD(numero1, numero2);
-
         System.out.println("El MCD de " + numero1 + " y " + numero2 + " es: " + mcd);
     }
 
@@ -23,7 +22,6 @@ public class Main {
             b = a % b;
             a = temp;
         }
-        // 'a' contiene el MCD al final del algoritmo
         return a;
     }
 }
