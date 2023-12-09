@@ -5,14 +5,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduce 2 valores para imprimir los intermedios");
-        System.out.print(" · Valor inicial: ");
-        int valorInicial = teclado.nextInt();
-        System.out.print(" · Valor final: ");
-        int valorFinal = teclado.nextInt();
+        System.out.print("Introduce un valor para doblarlo: ");
+        int valor = teclado.nextInt();
+        doblarValor(valor);
+    }
 
-        for (int i = valorInicial; i <= valorFinal; i++) {
-            System.out.print(i + " ");
-        }
+    private static void doblarValor(int valor) {
+        valor *= 2;
+        System.out.println("Ahora el número tiene un valor de: " + valor);
     }
 }
