@@ -16,7 +16,6 @@ public class Main {
         System.out.print("Introduce un precio: ");
         BigDecimal precioIntroducido = BigDecimal.valueOf(teclado.nextDouble());
 
-        // Corrección: Pasa las variables correctas al crear el objeto Pendrive
         Pendrive usb1 = new Pendrive("marcaIntroducida", "modeloIntroducido", capacidadIntroducida, precioIntroducido);
 
         System.out.println("El precio con IVA es " + usb1.calcularPrecioConIVA());
