@@ -12,7 +12,7 @@ public class Conversor {
                     2. Libras
                     3. Yens
                     0. Salir
-                    Escoja una opción: """);
+                    Escoja una opción:""");
 
             int opcion = teclado.nextInt();
 
@@ -33,7 +33,7 @@ public class Conversor {
                         moneda = new Yen(cantidad);
                     }
 
-                    System.out.println("La cantidad en euros es: " + moneda.cantidadEnEuros() + " €");
+                    System.out.println("La cantidad en euros es: " + convertirAdecimales(moneda.cantidadEnEuros()) + " €");
 
                     break;
                 case 0:
@@ -44,5 +44,10 @@ public class Conversor {
                     break;
             }
         } while (true);
+    }
+
+    private static String convertirAdecimales (double valor){
+        return "" + Math.round(valor * 100) / 100.0;
+
     }
 }
