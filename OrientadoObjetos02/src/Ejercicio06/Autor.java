@@ -17,20 +17,8 @@ public class Autor {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public String getApellido() {
         return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public int getAnhoNacimiento() {
-        return anhoNacimiento;
     }
 
     public void setAnhoNacimiento(int anhoNacimiento) {
@@ -39,14 +27,6 @@ public class Autor {
         } else {
             System.out.println("Error: El año de nacimiento no puede ser superior al año actual.");
         }
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
     }
 
     public void ver_datos(){
