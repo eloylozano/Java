@@ -1,4 +1,3 @@
-
 public class Yen extends Moneda {
     private double cantidad;
 

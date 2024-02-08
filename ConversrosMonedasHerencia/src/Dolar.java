@@ -1,5 +1,3 @@
-
-
 public class Dolar extends Moneda {
     private double cantidad;
 

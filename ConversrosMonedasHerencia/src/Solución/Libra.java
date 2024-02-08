@@ -1,14 +1,16 @@
+package Solución;
+
 public class Libra extends Moneda {
-    private double cantidad;
+
+    private static  final double CONVERSOR_A_LIBRA = 1.1029861;
 
     public Libra(double cantidad) {
-        this.cantidad = cantidad;
+        super(cantidad);
     }
 
     @Override
     protected double cantidadEnEuros() {
-        double resultado = 0;
-        resultado = this.cantidad * 1.1029861;
+        double resultado = cantidad * CONVERSOR_A_LIBRA;
         return resultado;
     }
 }

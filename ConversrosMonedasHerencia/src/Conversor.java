@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Conversor {
@@ -10,9 +9,8 @@ public class Conversor {
         double cantidadEnEuros = 0;
         switch(opcion) {
             case 0:
-                System.out.println("Sayōnara, Baby");
+                System.out.println("Saliendo...");
                 System.exit(0);
-
                 break;
 
             case 1:
@@ -21,7 +19,6 @@ public class Conversor {
                 cantidadEnEuros = dolarAConvertir.cantidadEnEuros(); //Usamos el método "cantidadEnEuros" para convertir a dolar el objeto "dolarAConvertir" y almacenarlo en la variable cantidadEnEuros.
                 mostrarResultado(cantidadEnEuros); // La función "mostrarResultado nos da el resultado del parámetro "cantidadEnEuros".
                 //System.out.println(mostrarResultado(cantidadEnEuros));  //Otra forma de hacerlo.
-
                 break;
 
             case 2:
@@ -30,7 +27,6 @@ public class Conversor {
                 cantidadEnEuros = libraAConvertir.cantidadEnEuros();
                 mostrarResultado(cantidadEnEuros);
                 //System.out.println(mostrarResultado(cantidadEnEuros));  //Otra forma de hacerlo.
-
                 break;
 
             case 3:
@@ -39,7 +35,6 @@ public class Conversor {
                 cantidadEnEuros = yenAConvertir.cantidadEnEuros();
                 mostrarResultado(cantidadEnEuros);
                 //System.out.println(mostrarResultado(cantidadEnEuros));   //Otra forma de hacerlo.
-
                 break;
 
 
