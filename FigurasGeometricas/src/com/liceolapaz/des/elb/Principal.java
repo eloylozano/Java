@@ -66,20 +66,20 @@ public class Principal {
         System.out.println("El área da un total de " + (String.format("%.2f", areaRectangulo) + " y su perímetro " + String.format("%.2f", perimetroRectangulo)));
     }
 
-    private static double ladoPentagono(){
+    private static double ladoPentagono() {
         System.out.print(" - Escribe el tamaño de un lado: ");
         Scanner teclado = new Scanner(System.in);
         return teclado.nextDouble();
     }
 
-    private static double nLadosPentagono(){
+    private static double nLadosPentagono() {
         System.out.print(" - Escribe el número de lados: ");
         Scanner teclado = new Scanner(System.in);
         return teclado.nextDouble();
     }
 
-    private static void resultadoPentagono(double areaPentagono, double perimetroPentagono){
-        System.out.println("El resultado del área da un total de: " + (String.format("%.2f",areaPentagono) + " y el perímetro tiene un total de: " + (String.format("%.2f",perimetroPentagono))));
+    private static void resultadoPentagono(double areaPentagono, double perimetroPentagono) {
+        System.out.println("El resultado del área da un total de: " + (String.format("%.2f", areaPentagono) + " y el perímetro tiene un total de: " + (String.format("%.2f", perimetroPentagono))));
     }
     //------------------------------------------------------------------------------------------------ -----
 
@@ -98,7 +98,7 @@ public class Principal {
                     calcularArea();
                     double baseTriangulo = baseTriangulo();
                     double alturaTriangulo = alturaTriangulo();
-                    double perimetroTriangulo = (Math.sqrt(alturaTriangulo * alturaTriangulo + baseTriangulo * baseTriangulo)) * 3;
+                    double perimetroTriangulo = (Math.sqrt(2 * (alturaTriangulo + baseTriangulo))) * 3;
                     double areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
                     resultadoTriangulo(areaTriangulo, perimetroTriangulo);
                     break;
@@ -119,9 +119,9 @@ public class Principal {
                     double ladoPentagono = ladoPentagono();
                     double nLadosPentagono = nLadosPentagono();
                     double perimetroPentagono = ladoPentagono * nLadosPentagono;
-                    double apotemaPentagono = Math.sqrt( (ladoPentagono * ladoPentagono) - ((ladoPentagono/2) * (ladoPentagono/2)));
-                    double areaPentagono = (perimetroPentagono * apotemaPentagono)/2;
-                    resultadoPentagono(areaPentagono, perimetroPentagono );
+                    double apotemaPentagono = Math.sqrt((ladoPentagono * ladoPentagono) - ((ladoPentagono / 2) * (ladoPentagono / 2)));
+                    double areaPentagono = (perimetroPentagono * apotemaPentagono) / 2;
+                    resultadoPentagono(areaPentagono, perimetroPentagono);
                     break;
                 default:
                     System.out.println("Opción no válida!");
